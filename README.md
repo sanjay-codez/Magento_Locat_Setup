@@ -39,6 +39,28 @@ System Requirement
                     - composer --- check the version
                     
 
+      Install Magento 
+      ---------------------
+      - Go To Directory of var/www/html   --> Inside this directory create one folder as per your wise like ( Magento237 )
+      
+                   - sudo mkdir Magento237  (Create the folder via Terminal Command )     also for delete - rm  -rf folderName
+                   - cd Magento237/
+                   - sudo su          (as super user mode )
+                   
+      - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition Magento237
+      
+      (or)
+      
+      - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
+      
+      
+     - Enter Magento Website(marketplace.magento.com) (Your  Created  Account  Access Key Under Myprofile Section (Public Key - Username & Password - Private Key)
+      
+      - 
+      
+      
+      
+      
 
 
 
