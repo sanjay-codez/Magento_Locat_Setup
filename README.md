@@ -164,14 +164,19 @@ sudo a2enmod php7.4
 
 ### Error Occour Time Of Setup
 ----------------------------------
-1) [InvalidArgumentException]                                                       
+#### 1) [InvalidArgumentException]                                                       
   Could not find package magento/project-community-edition with version 2.3.7-p1. 
   
+  Solution
+  -----------
+                       - Syntax error
+                       
   
   
-2) Your requirements could not be resolved to an installable set of packages.
-
-  Problem 1
+  
+  
+#### 2) Your requirements could not be resolved to an installable set of packages.
+Problem 1
     - Root composer.json requires magento/product-community-edition 2.3.7 -> satisfiable by magento/product-community-edition[2.3.7].
     - magento/product-community-edition 2.3.7 requires ext-curl * -> it is missing from your system. Install or enable PHP's curl extension.
   Problem 2
@@ -201,6 +206,11 @@ To enable extensions, verify that they are enabled in your .ini files:
     - /etc/php/7.4/cli/conf.d/20-sysvshm.ini
     - /etc/php/7.4/cli/conf.d/20-tokenizer.ini
 You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+
+
+Solution
+------------
+                 - 
 
 
 3)
