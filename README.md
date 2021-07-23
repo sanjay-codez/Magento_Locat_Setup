@@ -210,10 +210,12 @@ You can also run `php --ini` inside terminal to see which files are used by PHP 
 
 Solution
 ------------
-                 - 
+     
+        -   sudo dpkg --configure -a
+        
 
 
-3)
+## 3)
 
 
   
