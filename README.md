@@ -215,7 +215,9 @@ Solution
         
 
 
-## 3)
+## 3)This site can’t be reachedCheck if there is a typo in test.local. DNS_PROBE_FINISHED_NXDOMAIN
+---------------------------------------------------------------------------------------------------------
+
 
 
   
