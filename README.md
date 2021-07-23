@@ -17,6 +17,101 @@ System Requirement
                   - Nginx  - 1.8 
 
 
+
+
+
+## Some Command
+----------------
+COMMAND
+===============
+- sudo su
+- cat /etc/*release
+- sudo apt-get update
+- 
+
+
+
+
+PHP
+========
+- php --version
+- sudo apt autoremove
+- sudo apt install php7.4
+- sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
+- 
+
+
+COMPOSER
+==============
+- composer -v
+- - cd
+                - pwd
+                - check the php must be install
+                - sudo apt install unzip
+                - curl -sS https://getcomposer.org/installer -o composer-setup.php
+                - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+                - composer --- check the version
+
+
+MYSQL
+=========
+- sudo service mysql status
+- sudo service mysql stop
+- sudo service mysql start
+- mysql --version
+
+Un-Install Mysql
+==============
+- sudo systemctl stop mysql
+- sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+- sudo apt-get remove --purge mysql*
+- sudo apt autoremove
+- sudo apt-get autoclean
+- sudo rm -rf /var/lib/mysql
+- sudo rm -rf /etc/mysql
+
+
+
+INSTALL MYSQL - 5.7
+======================
+- 
+
+
+
+APACHE
+=========
+- sudo apt install apache2
+- sudo service apache2 start
+- sudo service apache2 status
+- sudo service apache2 stop
+- systemctl status apache2.service
+-  sudo systemctl enable apache2.service
+- sudo nano /etc/apache2/sites-available/magento2.conf
+- apache2 -v
+- sudo a2enmod rewrite
+- 
+
+
+
+
+NGINX
+==========
+- /etc/init.d/nginx status
+- /etc/init.d/nginx stop
+- /etc/init.d/nginx start
+- nginx -v
+- 
+Lets disable php 7.2 for apache and enable php 7.4 for Apache
+-------------------------------------------------------------------------------------------------------
+sudo a2dismod php7.2
+sudo a2enmod php7.4
+
+
+
+
+
+
+
         Install Mysql 5.7
         ----------------------
                - sudo apt-cache policy mysql-server
@@ -50,6 +145,9 @@ System Requirement
       - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition Magento237
       
       (or)
+      
+      - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237
+      
       
       - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
       
