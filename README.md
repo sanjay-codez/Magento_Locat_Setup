@@ -66,4 +66,52 @@ System Requirement
 
 ### Error Occour Time Of Setup
 ----------------------------------
+1) [InvalidArgumentException]                                                       
+  Could not find package magento/project-community-edition with version 2.3.7-p1. 
+  
+  
+  
+2) Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires magento/product-community-edition 2.3.7 -> satisfiable by magento/product-community-edition[2.3.7].
+    - magento/product-community-edition 2.3.7 requires ext-curl * -> it is missing from your system. Install or enable PHP's curl extension.
+  Problem 2
+    - phpunit/phpunit[9.0.0, ..., 9.5.7] require ext-dom * -> it is missing from your system. Install or enable PHP's dom extension.
+    - Root composer.json requires phpunit/phpunit ^9 -> satisfiable by phpunit/phpunit[9.0.0, ..., 9.5.7].
+
+To enable extensions, verify that they are enabled in your .ini files:
+    - /etc/php/7.4/cli/php.ini
+    - /etc/php/7.4/cli/conf.d/10-opcache.ini
+    - /etc/php/7.4/cli/conf.d/10-pdo.ini
+    - /etc/php/7.4/cli/conf.d/20-calendar.ini
+    - /etc/php/7.4/cli/conf.d/20-ctype.ini
+    - /etc/php/7.4/cli/conf.d/20-exif.ini
+    - /etc/php/7.4/cli/conf.d/20-ffi.ini
+    - /etc/php/7.4/cli/conf.d/20-fileinfo.ini
+    - /etc/php/7.4/cli/conf.d/20-ftp.ini
+    - /etc/php/7.4/cli/conf.d/20-gettext.ini
+    - /etc/php/7.4/cli/conf.d/20-iconv.ini
+    - /etc/php/7.4/cli/conf.d/20-json.ini
+    - /etc/php/7.4/cli/conf.d/20-phar.ini
+    - /etc/php/7.4/cli/conf.d/20-posix.ini
+    - /etc/php/7.4/cli/conf.d/20-readline.ini
+    - /etc/php/7.4/cli/conf.d/20-shmop.ini
+    - /etc/php/7.4/cli/conf.d/20-sockets.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvmsg.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvsem.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvshm.ini
+    - /etc/php/7.4/cli/conf.d/20-tokenizer.ini
+You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+
+
+3)
+
+
+  
+  
+  
+  
+
+
 
