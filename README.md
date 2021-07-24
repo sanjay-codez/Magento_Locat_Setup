@@ -22,6 +22,39 @@ System Requirement
 
 ## Some Command
 ----------------
+                      
+                      
+                        - sudo php bin/magento setup:upgrade
+                        - bin/magento setup:di:compile
+                        - bin/magento setup:static-content:deploy -f
+                        - bin/magento indexer:reindex
+                        - bin/magento cache:flush
+                        - bin/magento module:status 
+                        - php bin/magento   - check when Namespace error
+                        - php bin/magento setup:di:compile
+                        - chmod -R 777 var/ pub/ generated/        
+                        - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
+                        - rm -rf FolderName   - To Remove any Folder 
+                        
+                        
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 COMMAND
 ===============
 - sudo su
