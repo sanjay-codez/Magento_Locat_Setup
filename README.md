@@ -156,7 +156,18 @@ NGINX
 - /etc/init.d/nginx stop
 - /etc/init.d/nginx start
 - nginx -v
+- sudo nano /etc/nginx/sites-available/default   - check the port and which version php used by nginx
 - 
+
+
+
+
+
+
+
+
+
+
 Lets disable php 7.2 for apache and enable php 7.4 for Apache
 -------------------------------------------------------------------------------------------------------
 sudo a2dismod php7.2
