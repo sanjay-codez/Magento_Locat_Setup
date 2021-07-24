@@ -72,8 +72,9 @@ Un-Install Mysql
 
 
 
-INSTALL MYSQL - 5.7
-======================
+INSTALL MYSQL - 5.7  OR OTHER VERSION
+=====================================
+- 
 - 
 
 
@@ -91,6 +92,28 @@ APACHE
 - sudo a2enmod rewrite
 - 
 
+Un-INSTALL APACHE
+===================
+- Stop the apache - sudo service apache2 stop
+- Remove apache
+                  - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                     //or 
+                  - sudo apt-get purge apache2 apache2-utils apache2-bin apache2.2-common
+                  
+                   //or 
+                   - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                   - sudo apt-get autoremove
+                   - sudo rm -rf /etc/apache2  
+                   - whereis apache2   - check the if furthur exist after uninstall
+
+
+
+INSTALL APACHE2
+================
+    
+                 - 
+                   
+                   
 
 
 
