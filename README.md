@@ -158,7 +158,8 @@ NGINX
 - nginx -v
 - sudo nano /etc/nginx/sites-available/default   - check the port and which version php used by nginx
 - 
-
+- /etc/init.d/nginx stop
+- 
 
 
 
