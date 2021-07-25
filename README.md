@@ -88,13 +88,15 @@ COMPOSER
 
 MYSQL
 =========
+Check the Mysql 
+-----------------
 - sudo service mysql status
 - sudo service mysql stop
 - sudo service mysql start
 - mysql --version
 
 Un-Install Mysql
-==============
+=================
 - sudo systemctl stop mysql
 - sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
 - sudo apt-get remove --purge mysql*
@@ -105,10 +107,21 @@ Un-Install Mysql
 
 
 
-INSTALL MYSQL - 5.7  OR OTHER VERSION
-=====================================
+INSTALL MYSQL - 5.7 OR ORTHER VERSION ON UBUNTU 20.04 OR 18.04
+==================================================================
+
+STEP NEED TO INSTALL MYSQL
+---------------------------
+
+- sudo apt policy mysql-server      - check the version or any mysql is present in your system
+
+
+
+
+INSTALL MYSQL - 8.0 OR OTHER VERSION ON UBUNTU 20.04  OR 18.04 
+===============================================================
 - 
-- 
+
 
 
 
