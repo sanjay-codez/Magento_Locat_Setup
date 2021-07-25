@@ -35,6 +35,8 @@ System Requirement
                         - chmod -R 777 var/ pub/ generated/        
                         - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
                         - rm -rf FolderName   - To Remove any Folder 
+                        - bin/magento dep:mod:show
+                        - 
                         
                         
                         
@@ -60,6 +62,7 @@ COMMAND
 - sudo su
 - cat /etc/*release
 - sudo apt-get update
+- sudo nano /etc/hosts
 - 
 
 
