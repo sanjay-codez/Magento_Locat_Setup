@@ -271,6 +271,12 @@ Lets disable php 7.2 for apache and enable php 7.4 for Apache
 
 
 
+                              - cd /etc/nginx/sites-available/  - check the default page of nginx 
+                              - cd /etc/nginx/sites-enabled/   - ls - check which site is enable
+                              - sudo ln -s /etc/nginx/sites-available/magento237 /etc/nginx/sites-enabled
+                              - 
+
+
       Install Magento 
       ---------------------
       - Go To Directory of var/www/html   --> Inside this directory create one folder as per your wise like ( Magento237 )
