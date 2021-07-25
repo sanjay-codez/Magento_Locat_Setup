@@ -105,6 +105,9 @@ Un-Install Mysql
 - sudo rm -rf /var/lib/mysql
 - sudo rm -rf /etc/mysql
 
+- SELECT user,authentication_string,plugin,host FROM mysql.user;
+- 
+
 
 
 INSTALL MYSQL - 5.7 OR ORTHER VERSION ON UBUNTU 20.04 OR 18.04
