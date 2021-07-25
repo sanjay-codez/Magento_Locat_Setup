@@ -113,7 +113,12 @@ INSTALL MYSQL - 5.7 OR ORTHER VERSION ON UBUNTU 20.04 OR 18.04
 STEP NEED TO INSTALL MYSQL
 ---------------------------
 
-- sudo apt policy mysql-server      - check the version or any mysql is present in your system
+-    sudo apt policy mysql-server      - check the version or any mysql is present in your system
+-    sudo apt update
+-    sudo apt install wget -y
+-    wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+Once downloaded, install the repository by running the command below:
+-    sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 
 
 
