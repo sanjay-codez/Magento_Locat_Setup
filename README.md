@@ -252,9 +252,24 @@ Lets disable php 7.2 for apache and enable php 7.4 for Apache
                     - curl -sS https://getcomposer.org/installer -o composer-setup.php
                     - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
                     - composer --- check the version
-                    -  /etc/nginx/sites-available/magento2
+                    -  etc/nginx/sites-available/magento237  - open a nano file paste below command
                     
-                    
+                    -                    upstream fastcgi_backend {
+                                           server unix:/run/php/php7.4-fpm.sock;
+                                         } 
+
+                                         server {
+                                                 listen:80;
+                                                 listen [::]:80;
+ 
+                                                 set $MAGE_ROOT /var/www/html/magento237;
+                                                 include /var/www/html/magento237/nginx.conf.sample;
+
+                                                 server_name magento237.local;
+
+                                         }
+
+
 
       Install Magento 
       ---------------------
