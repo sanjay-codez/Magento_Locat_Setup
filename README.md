@@ -163,6 +163,13 @@ NGINX
 
 
 
+ELASTIC 
+==========
+
+               - service elasticsearch status
+               - 
+
+
 
 
 
@@ -171,8 +178,14 @@ NGINX
 
 Lets disable php 7.2 for apache and enable php 7.4 for Apache
 -------------------------------------------------------------------------------------------------------
-sudo a2dismod php7.2
-sudo a2enmod php7.4
+         - sudo a2dismod php7.2
+         - sudo a2enmod php7.4
+         - sudo service php7.3-fpm status
+         - sudo service php7.3-fpm stop
+         - sudo service php7.3-fpm start
+         - sudo service php7.4-fpm status
+         - sudo service php7.4-fpm stop
+         
 
 
 
@@ -187,6 +200,16 @@ sudo a2enmod php7.4
                - sudo mysql_secure_installation
                - Provide some  Details
                - 
+               
+               - mysql -u root -p12345678
+               - show databases;
+               - create database magento;
+               - select *from core_data_config;
+               - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';     - give proper password like - Sanjay1997@@ etc 
+               - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+               - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db-password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
+               - 
+               
 
 
 
