@@ -177,6 +177,14 @@ NGINX
 - sudo nano /etc/nginx/sites-available/default   - check the port and which version php used by nginx
 - 
 - /etc/init.d/nginx stop
+- systemctl enable nginx
+- nginx -t
+- systemctl restart nginx   -------- if any error get when test then run below cmd
+- tail -f /var/log/nginx/error.log
+- ps auxf | grep nginx
+- chown -R www-data:www-data /var/www/yourdomain.com
+- netstat -plant | grep '80\|443'
+- ufw status
 - 
 
 
