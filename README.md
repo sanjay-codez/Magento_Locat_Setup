@@ -320,7 +320,24 @@ Lets disable php 7.2 for apache and enable php 7.4 for Apache
       
       - 
       
-      
+ 
+ 
+ #FINAL STEP FOR SETUP
+ ======================
+ 
+ STEP - 1) Install all the pre required dependency for magento install(Check from Official Site)
+ --------------------------------------------------------------------------------------------------
+                        - Install Apache or Nginx
+                        - Install Mysql 
+                        - Install Elasticsearch
+                        - Install Php
+                        - Install Curl
+                        - Install Composer
+                        
+STEP - 2) 
+========================================================================
+                - 
+   
       
       
 
