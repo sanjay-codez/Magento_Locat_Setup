@@ -63,7 +63,7 @@ COMMAND
 - cat /etc/*release
 - sudo apt-get update
 - sudo nano /etc/hosts
-- 
+- unlink shopmonk
 
 
 
