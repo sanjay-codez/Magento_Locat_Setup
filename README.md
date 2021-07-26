@@ -193,7 +193,14 @@ NGINX
 - chown -R www-data:www-data /var/www/yourdomain.com
 - netstat -plant | grep '80\|443'
 - ufw status
-- 
+
+
+Un Install NGINX
+===================
+    - sudo apt-get remove nginx nginx-common
+    - sudo apt-get purge nginx nginx-common
+    - sudo apt-get autoremove
+    
 
 
 
