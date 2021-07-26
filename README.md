@@ -178,6 +178,15 @@ INSTALL APACHE2
 
 NGINX
 ==========
+
+sudo apt update
+sudo apt install nginx
+After installing Nginx, the commands below can be used to stop, start and enable Nginx service to always start up with the server boots.
+
+sudo systemctl stop nginx.service
+sudo systemctl start nginx.service
+sudo systemctl enable nginx.service
+
 - /etc/init.d/nginx status
 - /etc/init.d/nginx stop
 - /etc/init.d/nginx start
