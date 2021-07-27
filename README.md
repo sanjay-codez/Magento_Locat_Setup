@@ -65,30 +65,52 @@ COMMAND
 - sudo nano /etc/hosts
 - unlink shopmonk
 - sudo dpkg --configure -a
+- cd
 - 
 
 
 
 
-PHP
-========
+
+
+PHP INSTALL
+===========
 - php --version
 - sudo apt autoremove
+- sudo add-apt-repository ppa:ondrej/php
+- sudo apt-get update
 - sudo apt install php7.4
+- sudo apt install php7.3
+- sudo apt install php
 - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
 - 
+- To switch that to the newer 7.1,7.2,7.3,7.4 version, first disable older PHP version:
+     - user@test:~# sudo a2dismod php7.0(select your version)
+
+
+
+UN-INSTALL PHP
+==============
+                 - sudo apt-get purge php7.*
+                 - sudo apt-get autoclean
+                 - sudo apt-get autoremove
 
 
 COMPOSER
 ==============
-- composer -v
-- - cd
+                - composer -v
+                - cd
                 - pwd
                 - check the php must be install
                 - sudo apt install unzip
                 - curl -sS https://getcomposer.org/installer -o composer-setup.php
                 - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
                 - composer --- check the version
+
+UN-INSTALL COMPOSER
+====================
+                       - 
+                       - 
 
 
 MYSQL
