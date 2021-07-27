@@ -138,13 +138,6 @@ Un-Install Mysql
 - SELECT user,authentication_string,plugin,host FROM mysql.user;
 - 
 
-
-
-INSTALL MYSQL - 5.7 OR ORTHER VERSION ON UBUNTU 20.04 OR 18.04
-===================================nginx: [emerg] unknown directive "listen:80" in /etc/nginx/sites-enabled/magento237:6
-nginx: configuration file /etc/nginx/nginx.conf test failed
-===============================
-
 STEP NEED TO INSTALL MYSQL
 ---------------------------
 
