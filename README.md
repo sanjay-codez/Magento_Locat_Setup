@@ -17,11 +17,8 @@ System Requirement
                   - Nginx  - 1.8 
 
 
-
-
-
-## Some Command
-----------------
+## Some Command For Magento
+----------------------------
                       
                       
                         - sudo php bin/magento setup:upgrade
@@ -37,25 +34,6 @@ System Requirement
                         - rm -rf FolderName   - To Remove any Folder 
                         - bin/magento dep:mod:show
                         - 
-                        
-                        
-                        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 COMMAND
 ===============
@@ -66,8 +44,12 @@ COMMAND
 - unlink shopmonk
 - sudo dpkg --configure -a
 - cd
+- pkexec chmod 555 /etc/sudoers
+- pkexec chmod 555 /etc/sudoers.d/README  - if etc folder is worldwritable stage
+- whereis
+- rm -rf
 - 
-
+ 
 Lets disable php 7.2 for apache and enable php 7.4 for Apache
 --------------------------------------------------------------
          - sudo a2dismod php7.2
@@ -144,13 +126,12 @@ Un-Install Mysql
 
 STEP NEED TO INSTALL MYSQL
 ---------------------------
-
--    sudo apt policy mysql-server      - check the version or any mysql is present in your system
--    sudo apt update
--    sudo apt install wget -y
--    wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
-Once downloaded, install the repository by running the command below:
--    sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+                    -    sudo apt policy mysql-server      - check the version or any mysql is present in your system
+                    -    sudo apt update
+                    -    sudo apt install wget -y
+                    -    wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+                            Once downloaded, install the repository by running the command below:
+                    -    sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 
 
 
@@ -164,30 +145,29 @@ INSTALL MYSQL - 8.0 OR OTHER VERSION ON UBUNTU 20.04  OR 18.04
 
 APACHE
 =========
-- sudo apt install apache2
-- sudo service apache2 start
-- sudo service apache2 status
-- sudo service apache2 stop
-- systemctl status apache2.service
--  sudo systemctl enable apache2.service
-- sudo nano /etc/apache2/sites-available/magento2.conf
-- apache2 -v
-- sudo a2enmod rewrite
-- 
+                            - sudo apt install apache2
+                            - sudo service apache2 start
+                            - sudo service apache2 status
+                            - sudo service apache2 stop
+                            - systemctl status apache2.service
+                            -  sudo systemctl enable apache2.service
+                            - sudo nano /etc/apache2/sites-available/magento2.conf
+                            - apache2 -v
+                            - sudo a2enmod rewrite
 
 Un-INSTALL APACHE
 ===================
-- Stop the apache - sudo service apache2 stop
+- Stop the apache                - sudo service apache2 stop
 - Remove apache
-                  - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                               - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
                      //or 
-                  - sudo apt-get purge apache2 apache2-utils apache2-bin apache2.2-common
+                               - sudo apt-get purge apache2 apache2-utils apache2-bin apache2.2-common
                   
-                   //or 
-                   - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-                   - sudo apt-get autoremove
-                   - sudo rm -rf /etc/apache2  
-                   - whereis apache2   - check the if furthur exist after uninstall
+                       //or 
+                            - sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+                            - sudo apt-get autoremove
+                            - sudo rm -rf /etc/apache2  
+                            - whereis apache2   - check the if furthur exist after uninstall
 
 
 
