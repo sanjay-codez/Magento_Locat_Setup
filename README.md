@@ -241,7 +241,12 @@ ELASTIC
 ==========
 
                - service elasticsearch status
-               - 
+               - /etc/init.d/elasticsearch status
+               - /etc/init.d/elasticsearch start
+               - /etc/init.d/elasticsearch stop
+               - /etc/init.d/elasticsearch restart
+               - /etc/init.d/elasticsearch force-reload
+               
 
 
 
