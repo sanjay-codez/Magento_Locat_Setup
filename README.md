@@ -68,11 +68,16 @@ COMMAND
 - cd
 - 
 
-
-
-
-
-
+Lets disable php 7.2 for apache and enable php 7.4 for Apache
+--------------------------------------------------------------
+         - sudo a2dismod php7.2
+         - sudo a2enmod php7.4
+         - sudo service php7.3-fpm status
+         - sudo service php7.3-fpm stop
+         - sudo service php7.3-fpm start
+         - sudo service php7.4-fpm status
+         - sudo service php7.4-fpm stop
+         
 PHP INSTALL
 ===========
 - php --version
@@ -88,7 +93,6 @@ PHP INSTALL
  
 - To switch that to the newer 7.1,7.2,7.3,7.4 version, first disable older PHP version:
      - user@test:~# sudo a2dismod php7.0(select your version)
-
 
 
 UN-INSTALL PHP
@@ -242,34 +246,9 @@ ELASTIC
                - /etc/init.d/elasticsearch stop
                - /etc/init.d/elasticsearch restart
                - /etc/init.d/elasticsearch force-reload
-               
-
-
-
-
-
-
-
-
-Lets disable php 7.2 for apache and enable php 7.4 for Apache
--------------------------------------------------------------------------------------------------------
-         - sudo a2dismod php7.2
-         - sudo a2enmod php7.4
-         - sudo service php7.3-fpm status
-         - sudo service php7.3-fpm stop
-         - sudo service php7.3-fpm start
-         - sudo service php7.4-fpm status
-         - sudo service php7.4-fpm stop
-         
-
-
-
-
-
-
-
-        Install Mysql 5.7
-        ----------------------
+           
+Install Mysql 5.7
+----------------------
                - sudo apt-cache policy mysql-server
                - sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
                - sudo mysql_secure_installation
