@@ -69,6 +69,7 @@ PHP INSTALL
 - sudo apt install php7.4
 - sudo apt install php7.3
 - sudo apt install php
+- sudo apt-get install php7.4-common php7.4-xml php7.4-curl php7.4-bcmath php7.4-intl php7.4-gd php7.4-zip php7.4-mysql php7.4-soap php7.4-mbstring
 - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
 - sudo apt-get install -y php7.4 libapache2-mod-php7.4 php7.4-common php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-xsl php7.4-mbstring php7.4-zip php7.4-bcmath php7.4-iconv php7.4-soap php7.4--fpm
 - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip, ext-  sockets
@@ -295,7 +296,7 @@ Install Mysql 5.7
       
       (or)
       
-      - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237
+      - composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:2.3.7 Magento237(you folder name)
       
       
       - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.3.7-p1 .
