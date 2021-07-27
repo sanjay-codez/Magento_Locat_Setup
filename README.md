@@ -64,6 +64,8 @@ COMMAND
 - sudo apt-get update
 - sudo nano /etc/hosts
 - unlink shopmonk
+- sudo dpkg --configure -a
+- 
 
 
 
