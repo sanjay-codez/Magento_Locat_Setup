@@ -391,6 +391,14 @@ nginx: configuration file /etc/nginx/nginx.conf test failed
 ---------------------------------------------------------------------
 
 
+
+## 5) This page isn’t workinglocalhost is currently unable to handle this request.
+HTTP ERROR 500
+--------------------------------------------------------------------------------
+Solution
+-------------
+                 - go to magento app/  directory and check the bootstrap.php file  -- un comment line 14 for see the error
+
   
   
   
