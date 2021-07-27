@@ -76,7 +76,7 @@ COMMAND
 PHP INSTALL
 ===========
 - php --version
-- sudo apt autoremove
+- sudo apt install software-properties-common
 - sudo add-apt-repository ppa:ondrej/php
 - sudo apt-get update
 - sudo apt install php7.4
@@ -94,6 +94,7 @@ UN-INSTALL PHP
                  - sudo apt-get purge php7.*
                  - sudo apt-get autoclean
                  - sudo apt-get autoremove
+                 - sudo apt autoremove
 
 
 COMPOSER
