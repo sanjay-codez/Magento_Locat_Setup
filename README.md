@@ -83,7 +83,9 @@ PHP INSTALL
 - sudo apt install php7.3
 - sudo apt install php
 - sudo apt install php7.4-common php7.4-mysql php7.4 php7.4-cgi libapache2-mod-php7.4 php-pear php7.4-mbstring
-- 
+
+- ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip, ext-  sockets
+ 
 - To switch that to the newer 7.1,7.2,7.3,7.4 version, first disable older PHP version:
      - user@test:~# sudo a2dismod php7.0(select your version)
 
