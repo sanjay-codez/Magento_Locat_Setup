@@ -401,7 +401,12 @@ Solution
 
   
   
-  
+## 6) Fatal error: Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento/var/page_cache" is not writable in /var/www/html/magento/vendor/magento/zendframework1/library/Zend/Cache.php:209 Stack trace: #0 /var/www/html/magento/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException() #1 /var/www/html/magento/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir() #2 /var/www/html/magento/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct() #3 /var/www/html/magento/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend() #4 /var/www/html/magento/vendor/magento/framework/App/Cache/Frontend/Factory.php(156): Zend_Cache::factory() #5 /var/www/html/magento/vendor/magento/framework/Cache/Frontend/Adapter/Zend.php(38): Magento\Framework\App\Cache\Frontend\Factory->Magento\Framework\App\Cache\Frontend\{closure}() #6 /var/www/html/magento/vendor/magento/framework/ObjectManager/F in /var/www/html/magento/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+-------------------------------------------------------------------------------------------------------
+Solution
+-----------------
+                           - 
+
   
 
 
