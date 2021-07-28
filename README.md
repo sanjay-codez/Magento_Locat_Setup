@@ -415,5 +415,9 @@ Solution
 
   
 
+## 7 ) Errors during compilation: AbstractConfigOption.php
 
+Solution
+----------
+                    - composer require symfony/console=4.4.26  - run this command inside your var/www/html/magento$ directory
 
