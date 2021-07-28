@@ -279,8 +279,13 @@ Install Mysql 5.7
 
 
 
+                         Inside html/Folder
+                         ===================
                               - cd /etc/nginx/sites-available/  - check the default page of nginx 
                               - cd /etc/nginx/sites-enabled/   - ls - check which site is enable
+                            
+                          Base Root 
+                          =========
                               - sudo ln -s /etc/nginx/sites-available/magento237 /etc/nginx/sites-enabled
                               - 
 
