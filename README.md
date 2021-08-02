@@ -33,7 +33,7 @@ System Requirement
                         - sudo bin/magento module:disable Codilar_Thor   - Disable any Module
                         - rm -rf FolderName   - To Remove any Folder 
                         - bin/magento dep:mod:show
-                        - 
+                        - sudo bin/magento de:mo:se developer
 
 COMMAND
 ===============
