@@ -26,6 +26,7 @@ System Requirement
                         - sudo bin/magento setup:static-content:deploy -f
                         - sudo bin/magento indexer:reindex
                         - sudo bin/magento cache:flush
+                        - sudo bin/magento cache:clean
                         - sudo bin/magento module:status 
                         - sudo php bin/magento   - check when Namespace error
                         - sudo php bin/magento setup:di:compile
