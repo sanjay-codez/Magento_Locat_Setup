@@ -135,6 +135,8 @@ STEP NEED TO INSTALL MYSQL
                     -    wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
                             Once downloaded, install the repository by running the command below:
                     -    sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+                    
+                    
 
 
 
@@ -243,8 +245,11 @@ Install Mysql 5.7
                - create database magento;
                - select *from magento;   - use your database
                - select *from core_config_data;
+               - select *from core_config_data where value='http://local.test.com/';
+               - update core_config_data set value="http://shopmonk.local/" where config_id = 4;
                - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';     - give proper password like - Sanjay1997@@ etc 
                - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+               
                - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db-password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
                - 
                
@@ -284,6 +289,9 @@ Install Mysql 5.7
                          ===================
                               - cd /etc/nginx/sites-available/  - check the default page of nginx 
                               - cd /etc/nginx/sites-enabled/   - ls - check which site is enable
+                              - check once in etc/hosts   
+                              - nginx.sample.config --- check here also
+                              
                             
                           Base Root 
                           =========
