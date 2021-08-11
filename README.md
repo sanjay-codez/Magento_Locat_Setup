@@ -80,6 +80,24 @@ PHP INSTALL
      - user@test:~# sudo a2dismod php7.0(select your version)
 
 
+
+How To Switch PHP Version (Like - If You are using php-7.4 and need to use php-7.3 and stop the php-7.4 only start the php- 7.3)
+================================================================================================================================
+
+
+                      Step 1-   
+                                Check the Php Version
+                                install php 
+                                check which version is running
+                                
+                      Step 2-
+                              
+                                
+
+
+
+
+
 UN-INSTALL PHP
 ==============
                  - sudo apt-get purge php7.*
