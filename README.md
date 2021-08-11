@@ -135,8 +135,14 @@ How To Switch PHP Version (Like - If You are using php-7.4 and need to use php-7
                   Step 4-
                                   sudo systemctl restart nginx.service                (or)    sudo systemctl restart apache2.service   
                                   sudo systemctl restart php7.3-fpm
-                        
-                   
+                  Step 5-
+                  
+                                List All Version of Php 
+                                                            - sudo update-alternatives --config php
+                                                            - you will get all php version present in your system so choice as per need 
+                                                            
+                 
+                 
                   
                        
 
