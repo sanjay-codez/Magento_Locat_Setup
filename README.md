@@ -379,6 +379,21 @@ Install Mysql 5.7
                                          }
 
 
+                              ------------------------------------------------------------
+                              upstream fastcgi_backend {
+                                            server unix:/run/php/php7.4-fpm.sock;
+                                                   } 
+
+                                     server {
+                                                listen 80;
+                                                 server_name local.test.com;
+
+                                                 set $MAGE_ROOT /var/www/html/test;
+                                                 set $MAGE_RUN_TYPE website;
+                                                 include /var/www/html/test/nginx.conf.sample;
+                                             }
+
+
 
                          Inside html/Folder
                          ===================
