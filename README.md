@@ -325,11 +325,24 @@ Install Mysql 5.7
                - show databases;
                - create database magento;
                - select *from magento;   - use your database
+            
+        Check user 
+        ----------------
+                      - SELECT User, Host FROM mysql.user;
+                      - select user from mysql.user;
+                      - DROP USER 'user1'@'localhost
+                      - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';     - give proper password like - Sanjay1997@@ etc 
+                      - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+               
+      Check url Value
+      -----------------------------
                - select *from core_config_data;
                - select *from core_config_data where value='http://local.test.com/';
                - update core_config_data set value="http://shopmonk.local/" where config_id = 4;
-               - CREATE USER 'magento237'@'localhost' IDENTIFIED BY 'password';     - give proper password like - Sanjay1997@@ etc 
-               - GRANT ALL PRIVILEGES ON *.* TO 'magento237'@'localhost' WITH GRANT OPTION;
+               - select *from core_config_data where config_id=4;
+               
+    DB Setup For Magento
+    --------------------------------
                
                - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db-password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
                - 
