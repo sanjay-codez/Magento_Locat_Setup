@@ -180,6 +180,13 @@ UN-INSTALL COMPOSER
 
 MYSQL
 =========
+
+Import Database 
+-------------------
+mysqldump -u username -p database_name > data-dump.sql
+
+
+
 Check the Mysql 
 -----------------
 - sudo service mysql status
