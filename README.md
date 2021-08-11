@@ -76,6 +76,18 @@ PHP INSTALL
 - sudo apt-get install -y php7.4 libapache2-mod-php7.4 php7.4-common php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-xsl php7.4-mbstring php7.4-zip php7.4-bcmath php7.4-iconv php7.4-soap php7.4--fpm
 - ext-bcmath,ext-ctype,ext-curl,ext-dom,ext-gd,ext-hash,ext-iconv,ext-int,ext-mbstring,ext-openssl,ext-pdo_mysql,ext-simplexml,ext-soap,ext-xsl, ext-zip, ext-  sockets
  
+ 
+ For Apache2
+ -----------------
+ sudo apt-get install php7.3 libapache2-mod-php7.3 php7.3-cli php7.3-mysql php7.3-gd php7.3-imagick php7.3-recode php7.3-tidy php7.3-xmlrpc
+ 
+ For Nginx
+ ------------
+ sudo apt-get install php7.3-fpm php7.3-cli php7.3-mysql php7.3-gd php7.3-imagick php7.3-recode php7.3-tidy php7.3-xmlrpc
+ 
+ 
+ 
+ 
 - To switch that to the newer 7.1,7.2,7.3,7.4 version, first disable older PHP version:
      - user@test:~# sudo a2dismod php7.0(select your version)
 
@@ -91,8 +103,40 @@ How To Switch PHP Version (Like - If You are using php-7.4 and need to use php-7
                                 check which version is running
                                 
                       Step 2-
-                              
-                                
+                                  Use Php Version with --  Apache 
+                                                                    sudo systemctl stop nginx.service
+                                                                    sudo systemctl start nginx.service
+                                                                    sudo systemctl enable nginx.service
+
+                                                       --  Nginx
+                                                                  sudo systemctl stop nginx.service
+                                                                  sudo systemctl start nginx.service
+                                                                   sudo systemctl enable nginx.service
+                                                                   
+            
+                  Step 3 - 
+                  
+                            sudo nano /etc/php/7.3/fpm/php.ini  (i am trying with php7.3  as per your php version you can go) 
+
+         Then edit the file to suit your environments. Some important lines to consider:
+
+                                         file_uploads = On
+                                         allow_url_fopen = On
+                                         memory_limit = 256M
+                                         upload_max_filesize = 64M
+                                         cgi.fix_pathinfo = 0
+                                         upload_max_filesize = 100M
+                                         max_execution_time = 360
+                                         date.timezone = America/Chicago
+                                         
+                  
+                  Step 4-
+                                  sudo systemctl restart nginx.service                (or)    sudo systemctl restart apache2.service   
+                                  sudo systemctl restart php7.3-fpm
+                        
+                   
+                  
+                       
 
 
 
