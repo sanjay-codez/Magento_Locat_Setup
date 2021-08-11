@@ -52,6 +52,7 @@ COMMAND
 - sudo a2enmod rewrite
 - CTRL+a
 - CTRL+e
+- which php
  
 Lets disable php 7.2 for apache and enable php 7.4 for Apache
 --------------------------------------------------------------
