@@ -184,7 +184,8 @@ MYSQL
 
 Import Database 
 -------------------
-mysqldump -u username -p database_name > data-dump.sql
+mysqldump -u username -p database_name > data-dump.sql  - not sure 
+mysql -u username -p database_name < file.sql  - fine 
 
 
 
