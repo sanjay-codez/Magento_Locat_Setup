@@ -56,6 +56,7 @@ COMMAND
 - composer self-update --1
 - composer self-update --2
 - CTRL+O   --- press enter and CTRL+X/Z   - when modify nano file (bootstrap.php)
+- SELECT * FROM core_config_data where path like '%web/secure/use_in_adminhtml%';
 - 
  
 Lets disable php 7.2 for apache and enable php 7.4 for Apache
