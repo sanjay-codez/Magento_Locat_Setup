@@ -2,6 +2,11 @@
 Setup Magento 2.3.7 in Local 
 
 
+1 - install the requirement
+2-  clone the project
+3-  run composer install 
+4-  import database
+5-  
 
 
 
