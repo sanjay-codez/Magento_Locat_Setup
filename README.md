@@ -353,7 +353,8 @@ Install Mysql 5.7
                
                - bin/magento setup:install  --base-url=http://magento237.local/  --db-host=localhost  --db-name=magento  --db-user=magento237  --db-password=Sanjay1997@@ --backend-frontname=admin  --admin-firstname=admin  --admin-lastname=admin  --admin-email=devops1@codilar.com  --admin-user=admin1  --admin-password=admin123  --language=en_US  --currency=INR  --timezone=Asia/Kolkata  --use-rewrites=1
                - 
-               
+               php bin/magento admin:user:create --admin-user=local --admin-password=admin123 --admin-email=sanjay1@gmail.com --admin-firstname=admin --admin-lastname=admin
+
 
 
 
